@@ -1,0 +1,66 @@
+INFO [2019-11-23 20:29:41] [perry_the_hum4n]  Session started!
+INFO [2019-11-23 20:29:41] [perry_the_hum4n]  -- Connection Checklist [1/3] (Internet Connection Status)
+INFO [2019-11-23 20:29:42] [perry_the_hum4n]  - Internet Connection Status: ok
+INFO [2019-11-23 20:29:42] [perry_the_hum4n]  - Current IP is "46.116.53.39" and it's from "Israel/IL"
+INFO [2019-11-23 20:29:42] [perry_the_hum4n]  -- Connection Checklist [2/3] (Instagram Server Status)
+INFO [2019-11-23 20:29:54] [perry_the_hum4n]  - Instagram WebSite Status: Currently Up 
+INFO [2019-11-23 20:29:54] [perry_the_hum4n]  - Instagram Response Time: 128.098 ms 
+INFO [2019-11-23 20:29:54] [perry_the_hum4n]  - Instagram Reponse Code: 200
+INFO [2019-11-23 20:29:54] [perry_the_hum4n]  - Instagram Server Status: ok
+INFO [2019-11-23 20:29:54] [perry_the_hum4n]  -- Connection Checklist [3/3] (Hide Selenium Extension)
+INFO [2019-11-23 20:29:54] [perry_the_hum4n]  - window.navigator.webdriver response: False
+INFO [2019-11-23 20:29:54] [perry_the_hum4n]  - Hide Selenium Extension: ok
+INFO [2019-11-23 20:30:20] [perry_the_hum4n]  Logged in successfully!
+INFO [2019-11-23 20:30:20] [perry_the_hum4n]  Saving account progress...
+INFO [2019-11-23 20:30:30] [perry_the_hum4n]  Tag [1/1]
+INFO [2019-11-23 20:30:30] [perry_the_hum4n]  --> b'natgeo'
+INFO [2019-11-23 20:30:40] [perry_the_hum4n]  desired amount: 19  |  top posts [disabled]: 9  |  possible posts: 18279430
+INFO [2019-11-23 20:30:47] [perry_the_hum4n]  Like# [1/19]
+INFO [2019-11-23 20:30:47] [perry_the_hum4n]  https://www.instagram.com/p/B5N9S4tJ3g1/
+INFO [2019-11-23 20:30:50] [perry_the_hum4n]  Image from: b'mad_gla'
+INFO [2019-11-23 20:30:50] [perry_the_hum4n]  Link: b'https://www.instagram.com/p/B5N9S4tJ3g1/'
+INFO [2019-11-23 20:30:50] [perry_the_hum4n]  Description: b'#bbctravel #bbc_travel #ig_color #ig_singapore #ig_travel #natgeotraveller #natgeoyourshot #natgeo #natgeotravellerindia #natgeotravel #singapore #random #click #love for #travelling #travellingthroughtheworld #travelphotography'
+INFO [2019-11-23 20:30:50] [perry_the_hum4n]  Location: b'Fort Canning Park, Fort Gate'
+ERROR [2019-11-23 20:30:55] [perry_the_hum4n]  Error occurred while deleting cookies from web browser!
+	b'Message: Browsing context has been discarded\n'
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\instapy\util.py", line 1840, in smart_run
+    yield
+  File "C:\Users\magshimim\Documents\Projects\insta_bot\insta_bot.py", line 32, in <module>
+    session.like_by_tags(["natgeo"], amount=10)
+  File "C:\Python36\lib\site-packages\instapy\instapy.py", line 1937, in like_by_tags
+    validation, details = self.validate_user_call(user_name)
+  File "C:\Python36\lib\site-packages\instapy\instapy.py", line 1322, in validate_user_call
+    self.logfolder,
+  File "C:\Python36\lib\site-packages\instapy\util.py", line 336, in validate_username
+    "//*[contains(text(), 'This Account is Private')]"
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Failed to convert data to an object
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\instapy\browser.py", line 167, in close_browser
+    browser.delete_all_cookies()
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 878, in delete_all_cookies
+    self.execute(Command.DELETE_ALL_COOKIES)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python36\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: Browsing context has been discarded
+
+INFO [2019-11-23 20:31:00] [perry_the_hum4n]  Sessional Live Report:
+	|> No any statistics to show
+
+
+[Session lasted 1.47 minutes]
+INFO [2019-11-23 20:31:00] [perry_the_hum4n]  Session ended!
